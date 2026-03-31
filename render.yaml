@@ -1,4 +1,22 @@
 services:
+  # Si quieres desplegar el backend, quita el comentario de la siguiente sección y Render pedirá tarjeta (plan starter):
+  # - type: web
+  #   name: api-recetas-ia-backend
+  #   env: node
+  #   plan: starter
+  #   buildCommand: npm install
+  #   startCommand: node server.js
+  #   envVars:
+  #     - key: PORT
+  #       value: 4000
+  #     - key: DATABASE_URL
+  #       sync: false # Set in Render dashboard
+  #     - key: groq_api_key
+  #       sync: false # Set in Render dashboard
+  #     - key: BACKEND_URL
+  #       sync: false # Set in Render dashboard
+  #   autoDeploy: true
+  #   rootDir: .
   - type: web
     name: api-recetas-ia-frontend
     env: static
