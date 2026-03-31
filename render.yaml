@@ -24,11 +24,3 @@ services:
     staticPublishPath: frontend/dist
     autoDeploy: true
     rootDir: .
-  - type: web
-    name: api-recetas-ia-frontend
-    env: static
-    plan: free
-    buildCommand: cd frontend && npm install && npm run build
-    staticPublishPath: frontend/dist
-    autoDeploy: true
-    rootDir: .
